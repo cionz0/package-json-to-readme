@@ -38,6 +38,10 @@ try {
 
 pkg.private = pkg.private || pkg.license === 'private' || false
 
+pkg.install_from_git = pkg.install_from_git ||  false
+pkg.npmregistry = pkg.install_from_git !== "only"
+pkg.install_from_git = pkg.install_from_git !== false
+
 if (argv.travis) {
   if (pkg.repository && pkg.repository.url && gh(pkg.repository.url)) {
     pkg.travis_url = gh(pkg.repository.url).travis_url

@@ -2,12 +2,13 @@
   "name": "package-json-to-readme",
   "version": "0.0.0-development",
   "description": "Generate a README.md from package.json contents",
+  "install_from_git": "only",
   "main": "index.js",
   "scripts": {
     "test": "mocha && standard",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
-  "repository": "https://github.com/zeke/package-json-to-readme",
+  "repository": "https://github.com/cionz0/package-json-to-readme",
   "keywords": [
     "package.json",
     "readme",
@@ -15,7 +16,7 @@
     "markdown",
     "documentation"
   ],
-  "author": "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com/)",
+  "author": "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com/), cionzo <cionzoh@gmail.com> (https://www.cionzo.com)",
   "license": "MIT",
   "dependencies": {
     "github-url-to-object": "^1.6.0",
